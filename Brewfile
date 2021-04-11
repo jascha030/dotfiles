@@ -12,8 +12,8 @@ tap 'khanhas/tap'
 brew 'bash'                                         # Latest Bash version
 brew 'coreutils'                                    # Apparently, those that come with macOS are outdated
 brew 'ffmpeg'                                       # Convert everything, from Videos to familymembers to .mp3 files
-brew 'git'                                          # Git, where'd we be, without it?            
-brew 'git-flow'                                     # Git, where'd we be, without it? ~~~~~~~~~~       
+brew 'git'                                          # Git, where'd we be, without it?
+brew 'git-flow'                                     # Git, where'd we be, without it? ~~~~~~~~~~
 brew 'gnupg'                                        # I hope she hit ya with the pre-gnupg, Drake- never
 brew 'grep'                                         # Like google maps but then for your terminal
 brew 'httpie'
@@ -27,7 +27,7 @@ brew 'tree'                                         # List directories in a tree
 brew 'zlib'                                         # Needed for Memcached
 brew 'autoconf'
 brew 'gmp'
-brew 'gradle'                                       
+brew 'gradle'
 brew 'ios-deploy'
 brew 'ruby'                                         # Edelstenen!
 brew 'libzip'                                       # Zip zopperty zop, I just slipped a roofie-drop
@@ -38,7 +38,7 @@ brew 'figlet'                                       # HackerMode
 brew 'php'                                          # 8.0.x
 brew 'php@7.4'                                      # 7.4.16 Still prefered (for now).
 brew 'composer'                                     # 2.0.x
-brew 'imagemagick'                                  
+brew 'imagemagick'
 brew 'meilisearch'
 brew 'mysql', restart_service: true, link: false    # Brew cleanup? Yer gonna have a baad time.
 brew 'mariadb', restart_service: true               # Brew cleanup? Yer gonna have a baad time.
@@ -49,7 +49,7 @@ brew 'memcached'                                    # Considered evil
 brew 'neovim'                                       # To impress the ladies
 brew 'node'                                         # Packsonpacksonpacksonpacksonpacks skrr, skrrrt, whoo!
 brew 'yarn'                                         # Used by the frontend-@Work-homies.
-brew 'pnpm'                                         # Now pref, over Yarn 
+brew 'pnpm'                                         # Now pref, over Yarn
 
 # Apps
 #======================================================================================================================================
@@ -90,9 +90,11 @@ cask 'skype'                                        # Does anybody still use thi
 cask 'slack'                                        # Da @work-Homies & @work-Fam
 cask 'zoom'                                         # Callin' with da @work-Homies
 
-# Productivity      
+# Productivity
 cask 'typora'                                       # MD editor
 
+# Design tools
+cask 'sketch'                                       # All round Web-friendly design tool
 
 # Development tools
 #======================================================================================================================================
@@ -112,27 +114,27 @@ cask 'visual-studio-code'                           # The allround chill editor 
 
 cask 'tinkerwell'                                   # Php/Laravel/Tinker utilities (not rly IDE) #license
 
-# Terminal                      
+# Terminal
 cask 'iterm2'                                       # iTerm2=thBest1
 
-# (Local)Host utils                     
+# (Local)Host utils
 cask 'docker'                                       # Environment containers
 cask 'transmit'                                     # FTP client #license
 # cask 'local'                                      # localwp: I get da front-end-Homies, I don't like it tho
 
-# GUIs                      
+# GUIs
 cask 'fork'                                         # Native GIT GUI
 cask 'gitkraken'                                    # Chromium (Electron) GIT UI
 cask 'tableplus'                                    # Database GUI #license
 cask 'insomnia'                                     # Http Client collections/testing
 cask 'postman'                                      # Http Client collection/testing
 
-# Utilities                     
+# Utilities
 cask 'authy'                                        # 'Authism', is not a disease, it's a blessing
 cask 'dropbox'                                      # WHAT'S IN DA BOOOOOOOOX???????!?!?!?!
 cask 'transmission'                                 # Send Apple MacOS/iOS apps to testflight
 
-# cask 'alfred'                     
+# cask 'alfred'
 cask 'google-chrome-canary'                         # Development purposes
 cask 'phpmon'                                       # Fi mon ta no demma php version 'ere mon, --seen?
 
