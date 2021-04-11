@@ -33,13 +33,21 @@ $HOME/.composer/vendor/bin/valet install
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
 mkdir $HOME/.projx
 mkdir $HOME/.projx/composer
+mkdir $HOME/.projx/www
+mkdir $HOME/.projx/www/SocialBrothers
+mkdir $HOME/.projx/www/Personal
+mkdir $HOME/.projx/www/Sites
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Removes .gitconfig from $HOME (if it exists) and symlinks the .gitconfig file from the .dotfiles
+rm -rf $HOME/.gitconfig
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg

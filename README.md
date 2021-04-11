@@ -1,6 +1,6 @@
 # Jascha's Dotfiles
 
-Forked from the very useful, [driesvints/dotfiles](https://github.com/driesvints/dotfiles). If you're not familiar I suggest you go check it out quickly.
+Forked from the very useful, [driesvints/dotfiles](https://github.com/driesvints/dotfiles). If you're not familiar I suggest you go check it out quickly, (together with the links provided in his README).
 
 ### Pre-re-install
 
