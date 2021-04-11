@@ -31,6 +31,7 @@ brew 'gradle'
 brew 'ios-deploy'
 brew 'ruby'                                         # Edelstenen!
 brew 'libzip'                                       # Zip zopperty zop, I just slipped a roofie-drop
+brew 'figlet'                                       # HackerMode
 
 
 # Development
@@ -56,7 +57,7 @@ cask 'appcleaner'                                   # Or Folder-de-shitinizer pu
 cask 'binance'                                      # You forget, you accidentaly get rich, perfect for ppl like me
 cask 'daisydisk'                                    # license@lpass
 cask 'expressvpn'                                   # license@lpass
-cask 'keka'                                         # Alternative Archive utility 
+cask 'keka'                                         # Alternative Archive utility c
 cask 'aerial'                                       # MacOS
 cask 'vlc'
 
