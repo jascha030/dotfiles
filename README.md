@@ -2,13 +2,7 @@
 
 Forked from the very useful, [driesvints/dotfiles](https://github.com/driesvints/dotfiles). If you're not familiar I suggest you go check it out quickly.
 
-## A Fresh macOS Setup
-
-These instructions are for when you've already set up your dotfiles. If you want to get started with your own dotfiles you can [find instructions below](#your-own-dotfiles).
-
-### Before you re-install
-
-First, go through the checklist below to make sure you didn't forget anything before you wipe your hard drive.
+### Pre-re-install
 
 - Did you commit and push any changes/branches to your git repositories?
 - Did you remember to save all important documents from non-iCloud directories?
