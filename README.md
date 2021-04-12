@@ -10,30 +10,10 @@ Forked from the very useful, [driesvints/dotfiles](https://github.com/driesvints
 - Did you remember to export important data from your local database?
 - Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
 
-### Installing macOS cleanly
-
-After going to our checklist above and making sure you backed everything up, we're going to cleanly install macOS with the latest release. Follow [this article](https://www.imore.com/how-do-clean-install-macos) to cleanly install the latest macOS version.
-
-### Setting up your Mac
-
-If you did all of the above you may now follow these install instructions to setup a new Mac.
-
-1. Update macOS to the latest version with the App Store
-2. [Generate a new public and private SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) by running:
-
-   ```zsh
-   curl https://raw.githubusercontent.com/driesvints/dotfiles/HEAD/ssh.sh | sh -s "<your-email-address>"
-   ```
-
-3. Clone this repo to `~/.dotfiles` with:
-
-    ```zsh
-    git clone git@github.com:driesvints/dotfiles.git ~/.dotfiles
-    ```
-
-4. Run `~/.dotfiles/fresh.sh` to start the installation
-5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
-6. Restart your computer to finalize the process
+1. Clone this repo to `~/.dotfiles`
+2. Run `~/.dotfiles/scripts/fresh.sh` to start the installation
+3. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+4. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
