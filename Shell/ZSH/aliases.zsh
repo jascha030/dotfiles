@@ -14,7 +14,7 @@ alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew d
 # Faster Time Machine Backup
 alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
 
-# Use single thread per website instead of per tab 
+# Use single thread per website instead of per tab
 alias browser="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --process-per-site"
 
 # Remove valet.sock and restart
@@ -23,7 +23,6 @@ alias valetr="valetrm && valet restart"
 
 # Open GitKraken using the current repo directory in the cli and bring it on focus.
 alias kraken='open gitkraken://repo/$PWD'
-
 
 # Working dir
 alias dev="cd ~/.projx"
