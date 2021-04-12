@@ -34,10 +34,15 @@ $HOME/.composer/vendor/bin/valet install
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/.projx
-mkdir $HOME/.projx/composer
+
+mkdir $HOME/.projx/Projects
+mkdir $HOME/.projx/Projects/Composer
+mkdir $HOME/.projx/Projects/SocialBrothers
+
 mkdir $HOME/.projx/www
 mkdir $HOME/.projx/www/SocialBrothers
 mkdir $HOME/.projx/www/Personal
+mkdir $HOME/.projx/www/Remotes
 mkdir $HOME/.projx/www/Sites
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
