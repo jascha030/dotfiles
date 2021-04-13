@@ -2,3 +2,5 @@
 [user]
     name = Jascha030
     email = contact@jaschavanaalst.nl
+[includeIf "gitdir:~/Socialbrothers/"]
+    path = .sb.gitconfig
