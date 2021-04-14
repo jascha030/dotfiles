@@ -39,9 +39,13 @@ else
   export EDITOR='pstorm'
 fi
 
+alias pstorm="phpstorm ."
+
 # MOAR SOARCE PLX.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Aliases
-[[ ! -f $DOTFILES/Shell/ZSH/aliases.zsh ]] || source $DOTFILES/Shell/ZSH/aliases.zsh
+[ -f $DOTFILES/ZSH/aliases.zsh ] && source $DOTFILES/ZSH/aliases.zsh
+# Fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 figlet -Lcw 80 -f speed "XTRM HackerMode 030"

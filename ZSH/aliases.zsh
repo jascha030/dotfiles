@@ -1,12 +1,16 @@
-# Shortcuts
-alias ohmyzsh="code ~/.oh-my-zsh"
-alias zshconfig="code ~/.zshrc"
-alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+# Ali(J)asses
+alias zshconfig="nvim $DOTFILES/"
+alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 alias rlsh="source $HOME/.zshrc"
+
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias cpssh="copyssh"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+
 alias c="clear"
+alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
@@ -14,32 +18,44 @@ alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew d
 # Faster Time Machine Backup
 alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
 
-# Use single thread per website instead of per tab
-alias browser="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --process-per-site"
-
-# Remove valet.sock and restart
-alias valetrm="rm ~/.config/valet/valet.sock"
+# Remove valet.sock and restart.
+alias valetrm="rm $HOME/.config/valet/valet.sock"
 alias valetr="valetrm && valet restart"
 
-# Open GitKraken using the current repo directory in the cli and bring it on focus.
-alias kraken='open gitkraken://repo/$PWD'
+# Make a symbolic link in current dir.
+alias linkdir="ln -s $PWD/"
+
+# Open current dir in GitKraken,
+# 'open' is a necessity, but also read as a cmd, So it kept po(o)ppin' free finder windows into existence.
+# It's prob. just me being, what's in F1 called, a Daniel Retiardo, but that's why the cmd is enclosed in `$()`.
+alias kraken='$(open gitkraken://repo/$PWD)'
+
+# Navigation
+function cwpd() {
+	emulate -L zsh
+	ll
+}
 
 # Working dir
 alias dev="cd ~/.projx"
+
 alias sb="cd ~/SocialBrothers"
 alias programming="cd ~/Programming"
+
 alias temp="cd ~/.projx/temp"
 alias dotfiles="cd $DOTFILES"
-
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
-alias dev="cd ~/.projx"
+alias wwwd="cd $HOME/.projx/www"
+alias sbsites="cd $HOME/.projx/www/socialbrothers"
 
 # PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
-# alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias cc="&& composer "
+alias cpsrcl="composer clear-cache"
+alias cpsrrm="rm -rf vendor/ composer.lock"
+alias cpsrfrup="cpscl cc u"
+alias cpsrfri="cpscl cc i"
+alias cpsrfresh="comprm && cpsfri"
+alias cpsndev="composer install --no-dev"
 
 # Git
 alias gst="git status"
@@ -58,3 +74,10 @@ alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+# Suffix Aliases
+alias -s php=pstorm
+
+# bulk association
+alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
+alias -s {cs,ts,html}=code
