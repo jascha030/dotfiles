@@ -86,24 +86,24 @@ wp-content/plugins/hello.php
 wp-content/themes/twenty*/
 
 # Symfony
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
-/app/spool/*
-/var/cache/*
-/var/logs/*
-/var/sessions/*
+# /app/cache/*
+# /app/logs/*
+# !app/cache/.gitkeep
+# !app/logs/.gitkeep
+# /app/spool/*
+# /var/cache/*
+# /var/logs/*
+# /var/sessions/*
 !var/cache/.gitkeep
 !var/logs/.gitkeep
 !var/sessions/.gitkeep
 /var/log/*
 !var/log/.gitkeep
-/app/config/parameters.yml
-/app/config/parameters.ini
+# /app/config/parameters.yml
+# /app/config/parameters.ini
 
 # Managed by Composer
-/app/bootstrap.php.cache
+# /app/bootstrap.php.cache
 /var/bootstrap.php.cache
 /bin/*
 !bin/console

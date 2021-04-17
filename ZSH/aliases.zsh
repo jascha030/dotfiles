@@ -25,6 +25,11 @@ alias valetr="valetrm && valet restart"
 # Make a symbolic link in current dir.
 alias linkdir="ln -s $PWD/"
 
+alias browser="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --process-per-site"
+
+alias chrome="browser"
+alias chromi="chrome -incognito"
+
 # Open current dir in GitKraken,
 # 'open' is a necessity, but also read as a cmd, So it kept po(o)ppin' free finder windows into existence.
 # It's prob. just me being, what's in F1 called, a Daniel Retiardo, but that's why the cmd is enclosed in `$()`.
@@ -81,3 +86,6 @@ alias -s php=pstorm
 # bulk association
 alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
 alias -s {cs,ts,html}=code
+
+source $HOME/.shcstmscripts/ZSH/browsrscr.zsh
+
