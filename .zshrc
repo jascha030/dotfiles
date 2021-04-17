@@ -49,3 +49,5 @@ alias pstorm="phpstorm ."
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 figlet -Lcw 80 -f speed "XTRM HackerMode 030"
+
+export FZF_DEFAULT_OPS="--extended"
