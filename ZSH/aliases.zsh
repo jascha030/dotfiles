@@ -31,8 +31,8 @@ alias chrome="browser"
 alias chromi="chrome -incognito"
 
 # Open current dir in GitKraken,
-# 'open' is a necessity, but also read as a cmd, So it kept po(o)ppin' free finder windows into existence.
-# It's prob. just me being, what's in F1 called, a Daniel Retiardo, but that's why the cmd is enclosed in `$()`.
+# 'open' is a necessity, but also read as a cmd, So it kept poppin' free finder windows into existence.
+# It's prob. just me but that's why the cmd is enclosed in `$()`.
 alias kraken='$(open gitkraken://repo/$PWD)'
 
 # Navigation
@@ -48,6 +48,7 @@ alias sb="cd ~/SocialBrothers"
 alias programming="cd ~/Programming"
 
 alias temp="cd ~/.projx/temp"
+
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias wwwd="cd $HOME/.projx/www"
@@ -87,7 +88,5 @@ alias -s php=pstorm
 alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
 alias -s {cs,ts,html}=code
 
-
 # Templates
 alias glbgitig="cat /Users/jascha030/.dotfiles/.gitignore | pbcopy"
-
