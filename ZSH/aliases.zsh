@@ -87,5 +87,7 @@ alias -s php=pstorm
 alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
 alias -s {cs,ts,html}=code
 
-source $HOME/.shcstmscripts/ZSH/browsrscr.zsh
+
+# Templates
+alias glbgitig="cat /Users/jascha030/.dotfiles/.gitignore | pbcopy"
 
