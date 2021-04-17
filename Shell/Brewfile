@@ -63,11 +63,12 @@ cask 'vlc'
 
 
 # Music Production / Audio
-cask 'ableton-live-suite'                           # DAW
+cask 'ableton-live-suite'                           # Main DAW | Logic for M&M @ the MAS section of this file
 cask 'native-access'                                # Manage Native Instruments Software (VST/AU)
 cask 'splice'                                       # Sample and project management and synchronisation
-cask 'surge-synthesizer'                            # VST/AU
+cask 'surge-synthesizer'                            # VST/AU (Made by Nerds :) so available through Brew & others)
 cask 'spotify'                                      # Music Streaming service
+# I'm still butthurt @ nobody made a VST/AU/AAX Package manager yet :( Just imagine... that's currently still a hassle. 
 
 # Quicklook
 cask 'qlmarkdown'
@@ -142,3 +143,5 @@ cask 'phpmon'                                       # Fi mon ta no demma php ver
 mas 'Magnet',   id: 441258766                       # The only thing I miss from my pre-MacOS life
 mas 'Numbers',  id: 409203825                       # One of those things you never need, unless when you've just removed it
 mas 'iMovie',   id: 408981434                       # I like to put too much effort when making a point @whatsapp, or instagram.
+mas 'Logic Pro' id: 634148309			    # Less-chill fr creative process, hawt-damn solid fr mix&mastering w 2many iZotope AU's-DAW
+
