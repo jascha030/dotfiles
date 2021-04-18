@@ -32,6 +32,7 @@ brew 'ios-deploy'
 brew 'ruby'                                         # Edelstenen!
 brew 'libzip'                                       # Zip zopperty zop, I just slipped a roofie-drop
 brew 'figlet'                                       # HackerMode
+brew 'antigen'
 
 
 # Development
