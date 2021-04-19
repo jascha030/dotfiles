@@ -1,8 +1,8 @@
 # Ali(J)asses
+alias edit="${EDITOR} $1"
 alias zshconfig="nvim $DOTFILES/"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 alias rlsh="source $HOME/.zshrc"
-
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias cpssh="copyssh"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
