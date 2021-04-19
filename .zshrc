@@ -48,6 +48,14 @@ alias pstorm="phpstorm ."
 # Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-figlet -Lcw 80 -f speed "XTRM HackerMode 030"
+figlet -Lcw 180 -f speed "XTRM Hacker Mode 030"
 
 export FZF_DEFAULT_OPS="--extended"
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
+[[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
+
+export PATH="/usr/local/sbin:$PATH" 
+
+source $DOTFILES/ZSH/path.zsh
+
