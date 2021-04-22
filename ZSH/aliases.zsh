@@ -41,6 +41,11 @@ function cwpd() {
 	ll
 }
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+
 # Working dir
 alias dev="cd ~/.projx"
 
