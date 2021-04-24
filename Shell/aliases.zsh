@@ -1,7 +1,7 @@
 # Ali(J)asses
 alias edit="${EDITOR} $1"
 alias zshconfig="edit $DOTFILES/.zshrc"
-alias zshalias="edit $DOTFILES/ZSH/aliases.zsh"
+alias zshalias="edit $DOTFILES/shell/aliases.zsh"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 
 

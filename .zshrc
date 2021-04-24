@@ -6,6 +6,8 @@ fi
 export DOTFILES="$HOME/.dotfiles"           # Local path to repo
 export ZSH="/Users/jascha030/.oh-my-zsh"    # Path to oh-my-zsh
 
+source $HOME/.antigen/antigen.zsh
+
 DEFAULT_USER="$USER"
 ZSH_THEME=powerlevel10k/powerlevel10k
 
@@ -28,7 +30,7 @@ plugins=(
 	tmux
 	dotenv
 	node
-	bundler
+	forklift
 	npm
 	yarn
 	history-substring-search
@@ -66,13 +68,13 @@ fi
 # P10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Aliases
-[ -f $DOTFILES/ZSH/aliases.zsh ] && source $DOTFILES/ZSH/aliases.zsh
+[ -f $DOTFILES/shell/aliases.zsh ] && source $DOTFILES/shell/aliases.zsh
 # Fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
 [[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
 # Paths
-[ -f $DOTFILES/ZSH/path.zsh ] && source $DOTFILES/ZSH/path.zsh
+[ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
 
 # figlet -Lcw 140 -f speed "XTRM Hacker Mode 030"
 figlet -Lc  -w $(tput cols) -t -f speed "Jassie030 Hackerman Mode"
