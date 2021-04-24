@@ -6,6 +6,8 @@ fi
 export DOTFILES="$HOME/.dotfiles"           # Local path to repo
 export ZSH="/Users/jascha030/.oh-my-zsh"    # Path to oh-my-zsh
 
+source $HOME/.antigen/antigen.zsh
+
 DEFAULT_USER="$USER"
 ZSH_THEME=powerlevel10k/powerlevel10k
 
@@ -28,7 +30,7 @@ plugins=(
 	tmux
 	dotenv
 	node
-	bundler
+	forklift
 	npm
 	yarn
 	history-substring-search
