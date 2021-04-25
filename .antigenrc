@@ -6,11 +6,15 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle z
 antigen bundle tmux
+antigen bundle pip
+antigen bundle fasd
 
 # ZSHeuuuuujjjjj
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-apple-touchbar
+
 
 # Fzf, See what all the "Fuzz" is about...
 antigen bundle leophys/zsh-plugin-fzf-finder
@@ -21,6 +25,7 @@ antigen bundle chrissicool/zsh-256color
 antigen bundle gretzky/auto-color-ls
 
 antigen bundle desyncr/auto-ls
+antigen bundle lukechilds/zsh-nvm
 
 antigen theme romkatv/powerlevel10k
 

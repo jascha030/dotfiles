@@ -3,13 +3,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export DOTFILES="$HOME/.dotfiles"
 
 # Antigen
 source $HOME/.antigen/antigen.zsh
 source $HOME/.dotfiles/.antigenrc
 
+
 # Export globals
+export DOTFILES="$HOME/.dotfiles"
 export PSTORM='phpstorm'
 export VSCODE='code'
 export NVIM='nvim'

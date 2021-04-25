@@ -10,7 +10,8 @@ alias rlsh="source $HOME/.zshrc"
 alias rr="rlsh"
 alias x="exit"
 alias c="clear"
-alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias ll="colorls -Ahl --color --group-directories-first"
+# alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
 
 
 # Clean and update Brew
@@ -42,10 +43,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-function cwpd() {
-	emulate -L zsh
-	ll
-}
+# function cwpd() {
+# 	emulate -L zsh
+# 	ll
+# }
 
 # Working dir
 alias dev="cd ~/.projx"
