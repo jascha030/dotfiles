@@ -32,6 +32,7 @@ brew 'ios-deploy'
 brew 'ruby'                                         # Edelstenen!
 brew 'libzip'                                       # Zip zopperty zop, I just slipped a roofie-drop
 brew 'figlet'                                       # HackerMode
+brew 'antigen'
 
 
 # Development
@@ -121,7 +122,7 @@ cask 'iterm2'                                       # iTerm2=thBest1
 # (Local)Host utils
 cask 'docker'                                       # Environment containers
 cask 'transmit'                                     # FTP client #license
-# cask 'local'                                      # localwp: I get da front-end-Homies, I don't like it tho
+cask 'local'                                        # localwp: I get da front-end-Homies, I don't like it tho
 
 # GUIs
 cask 'fork'                                         # Native GIT GUI
@@ -143,5 +144,6 @@ cask 'phpmon'                                       # Fi mon ta no demma php ver
 mas 'Magnet',   id: 441258766                       # The only thing I miss from my pre-MacOS life
 mas 'Numbers',  id: 409203825                       # One of those things you never need, unless when you've just removed it
 mas 'iMovie',   id: 408981434                       # I like to put too much effort when making a point @whatsapp, or instagram.
-mas 'Logic Pro' id: 634148309			    # Less-chill fr creative process, hawt-damn solid fr mix&mastering w 2many iZotope AU's-DAW
+mas 'Logic Pro', id: 634148309			    # Less-chill fr creative process, hawt-damn solid fr mix&mastering w 2many iZotope AU's-DAW
+mas 'Transmit 5', id: 1436522307		    # Ftp-Truck filled up with goods.
 
