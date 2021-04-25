@@ -7,6 +7,7 @@ export DOTFILES="$HOME/.dotfiles"
 
 # Antigen
 source $HOME/.antigen/antigen.zsh
+source $HOME/.dotfiles/.antigenrc
 
 # Export globals
 export PSTORM='phpstorm'
@@ -22,7 +23,8 @@ eval "$(pyenv init -)"
 # Aliases & Paths
 [ -f $DOTFILES/shell/aliases.zsh ] && source $DOTFILES/shell/aliases.zsh
 [ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+source $DOTFILES/.p10k.zsh
 
 # Output funny msg
 figlet -Lc  -w $(tput cols) -t -f speed "Jassie030 Hackerman Mode"
