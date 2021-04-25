@@ -19,11 +19,8 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
-# Set default MySQL root password and auth type.
-mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
-
 # Install PHP extensions with PECL
-pecl install imagick memcached redis swoole
+pecl install xdebug imagick memcached redis swoole
 
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
@@ -31,8 +28,6 @@ pecl install imagick memcached redis swoole
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/.projx
 
 mkdir $HOME/.projx/Projects
@@ -45,16 +40,14 @@ mkdir $HOME/.projx/www/Personal
 mkdir $HOME/.projx/www/Remotes
 mkdir $HOME/.projx/www/Sites
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+# Remove standard dotfiles and Symlink with the ones from the .dotfiles repo
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# Removes .gitconfig from $HOME (if it exists) and symlinks the .gitconfig file from the .dotfiles
 rm -rf $HOME/.gitconfig
-ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+ln -s $HOME/.dotfiles/git/.gitconfig $HOME/.gitconfig
 
-
-# Symlink the Mackup config file to the home directory
+rm -rf $HOME/.mackup.cfg 
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
