@@ -3,7 +3,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 # Antigen
 source $HOME/.antigen/antigen.zsh
 source $HOME/.dotfiles/.antigenrc
@@ -26,6 +25,9 @@ eval "$(pyenv init -)"
 [ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
 
 source $DOTFILES/.p10k.zsh
+source $HOME/.fzf.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Output funny msg
 figlet -Lc  -w $(tput cols) -t -f speed "Jassie030 Hackerman Mode"
