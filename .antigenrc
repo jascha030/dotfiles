@@ -27,7 +27,8 @@ antigen bundle gretzky/auto-color-ls
 antigen bundle desyncr/auto-ls
 antigen bundle lukechilds/zsh-nvm
 
-antigen theme romkatv/powerlevel10k
+THEME=romkatv/powerlevel10k
+antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
 
 # Apply gently on burning area.
 antigen apply
