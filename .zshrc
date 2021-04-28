@@ -7,7 +7,6 @@ fi
 source $HOME/.antigen/antigen.zsh
 source $HOME/.dotfiles/.antigenrc
 
-
 # Export globals
 export DOTFILES="$HOME/.dotfiles"
 export PSTORM='phpstorm'
@@ -15,10 +14,8 @@ export VSCODE='code'
 export NVIM='nvim'
 export EDITOR=$NVIM
 
-
 # PyEnv (Python Env)
 eval "$(pyenv init -)"
-
 
 # Aliases & Paths
 [ -f $DOTFILES/shell/aliases.zsh ] && source $DOTFILES/shell/aliases.zsh
@@ -30,5 +27,5 @@ source $HOME/.fzf.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Output funny msg
-figlet -Lc  -w $(tput cols) -t -f speed "Jassie030 Hackerman Mode"
+figlet -Lcw $(tput cols) -tf speed "Jassie030 Hackerman Mode"
 
