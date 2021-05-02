@@ -7,6 +7,7 @@ antigen bundle command-not-found
 antigen bundle z
 antigen bundle tmux
 antigen bundle pip
+antigen bundle fzf
 antigen bundle fasd
 
 # ZSHeuuuuujjjjj
