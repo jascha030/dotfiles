@@ -27,5 +27,5 @@ source $HOME/.fzf.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Output funny msg
-figlet -Lcw $(tput cols) -tf speed "Jassie030 Hackerman Mode"
+figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
 
