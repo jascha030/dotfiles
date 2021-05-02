@@ -11,8 +11,6 @@ alias rr="rlsh"
 alias x="exit"
 alias c="clear"
 alias ll="colorls -Ahl --color --group-directories-first"
-# alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-
 
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
@@ -42,11 +40,6 @@ alias wstorm="webstorm ." # Webstorm
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-# function cwpd() {
-# 	emulate -L zsh
-# 	ll
-# }
 
 # Working dir
 alias dev="cd ~/.projx"
@@ -105,3 +98,5 @@ alias glbgitig="cat $DOTFILES/.gitignore | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias cpssh="copyssh"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias ccdir="echo $PWD | pbcopy"
+
