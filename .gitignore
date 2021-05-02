@@ -76,6 +76,7 @@ Temporary Items
 .Trash-*
 .nfs*
 
+# Composer
 /vendor/
 
 # Nodejs
@@ -86,4 +87,7 @@ Temporary Items
 *.log
 *.sql
 *.sqlite
+
+shell/antigen.zsh
+
 

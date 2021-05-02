@@ -4,7 +4,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Antigen
-source $HOME/.antigen/antigen.zsh
+source $HOME/.dotfiles/shell/antigen.zsh
 source $HOME/.dotfiles/.antigenrc
 
 # Export globals
