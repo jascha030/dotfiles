@@ -4,13 +4,13 @@ alias zshconfig="edit $DOTFILES/.zshrc"
 alias zshalias="edit $DOTFILES/shell/aliases.zsh"
 alias ohmyzsh="nvim $HOME/.oh-my-zsh"
 
-
 # Navigation
 alias rlsh="source $HOME/.zshrc"
 alias rr="rlsh"
 alias x="exit"
 alias c="clear"
 alias ll="colorls -Ahl --color --group-directories-first"
+alias confdir="cd $HOME/.config"
 
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
@@ -20,9 +20,7 @@ alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
 
 # Remove valet.sock and restart.
 alias valetrm="rm $HOME/.config/valet/valet.sock"
-alias valetr="valetrm && valet restart"
-
-# Make a symbolic link in current dir.
+alias valetr="valetrm && valet restart" # Make a symbolic link in current dir.
 alias linkdir="ln -s $PWD/"
 
 # Chrome with just a little bit less RAMpage.
@@ -34,7 +32,6 @@ alias chromi="chrome -incognito"
 alias kraken='$(open gitkraken://repo/$PWD)' # Gitkraken
 alias pstorm="phpstorm ." # Phpstorm
 alias wstorm="webstorm ." # Webstorm
-
 
 # Navigation
 alias ..='cd ..'
@@ -56,7 +53,6 @@ alias sbsites="cd $HOME/.projx/www/socialbrothers"
 # alias sb="cd ~/SocialBrothers"
 # alias programming="cd ~/Programming"
 
-
 # PHP
 alias cc="&& composer "
 alias cpsrcl="composer clear-cache"
@@ -65,7 +61,6 @@ alias cpsrfrup="cpscl cc u"
 alias cpsrfri="cpscl cc i"
 alias cpsrfresh="comprm && cpsfri"
 alias cpsndev="composer install --no-dev"
-
 
 # Git
 alias gst="git status"
@@ -86,12 +81,10 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
 
-
 # Suffix Aliases
 alias -s php=pstorm
 alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
 alias -s {cs,ts,html}=code
-
 
 # Templates
 alias glbgitig="cat $DOTFILES/.gitignore | pbcopy"

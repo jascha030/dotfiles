@@ -1,5 +1,4 @@
 local execute = vim.api.nvim_command
-
 local fn = vim.fn
 local g = vim.g
 
@@ -15,3 +14,4 @@ require('material').set()
 g.material_style = 'palenight'
 
 vim.wo.number = true
+
