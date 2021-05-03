@@ -20,6 +20,7 @@ eval "$(pyenv init -)"
 # Aliases & Paths
 [ -f $DOTFILES/shell/aliases.zsh ] && source $DOTFILES/shell/aliases.zsh
 [ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
+[ -f $DOTFILES/shell/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
 
 source $DOTFILES/.p10k.zsh
 source $HOME/.fzf.zsh
