@@ -2,11 +2,7 @@
 "" Vim-Plug core
 "*****************************************************************************
 let vimplug_exists=expand('~/.config/nvim/autoload/plug.vim')
-if has('win32')&&!has('win64')
-  let curl_exists=expand('C:\Windows\Sysnative\curl.exe')
-else
-  let curl_exists=expand('curl')
-endif
+let curl_exists=expand('curl')
 
 let g:vim_bootstrap_langs = "html,javascript,lisp,lua,php,python,ruby,typescript"
 let g:vim_bootstrap_editor = "nvim"				" nvim or vim
