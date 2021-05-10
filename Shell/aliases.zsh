@@ -15,6 +15,10 @@ alias confdir="cd $HOME/.config"
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
 
+# Brew install and add to Brewfile
+# alias brewsave="brew install $1; echo "${1} \n" >> $DOTFILES/Brewfile;"
+# alias casksave=brew install $1 --cask; echo "${$1} \n" >> $DOTFILES/Brewfiles;
+
 # Faster Time Machine Backup
 alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
 
@@ -42,7 +46,7 @@ alias ....='cd ../../..'
 alias dev="cd ~/.projx"
 alias temp="cd ~/.projx/temp"
 
-alias dotfiles="cd $DOTFILES && ll"
+alias dotfiles="cd $DOTFILES"
 alias dfs="dotfiles"
 alias library="cd $HOME/Library"
 
