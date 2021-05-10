@@ -71,6 +71,10 @@ end
 time("try_loadstring definition", false)
 time("Defining packer_plugins", true)
 _G.packer_plugins = {
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
+  },
   ["material.nvim"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/material.nvim"
@@ -78,6 +82,10 @@ _G.packer_plugins = {
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["packer.nvim"] = {
     loaded = true,
