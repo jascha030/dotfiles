@@ -102,6 +102,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["rainbow_parentheses.vim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/rainbow_parentheses.vim"
   }
 }
 

@@ -4,7 +4,8 @@ return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use 'neovim/nvim-lspconfig'
 	use 'marko-cerovac/material.nvim'
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } 
+	use { 'nvim-treesitter/nvim-treesitter', irun = ':TSUpdate' } 
+	use 'nvim-treesitter/playground'
 	use 'onsails/lspkind-nvim'
 	use {
 		'hoob3rt/lualine.nvim',	

@@ -1,34 +1,45 @@
+-- Shortcuts for vim related functions
 local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
 local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
 local g = vim.g      -- a table to access global variables
 
-
 local scopes = {
-	o = vim.o,
-	b = vim.bo,
-	w = vim.wo
+    o = vim.o,
+    b = vim.bo,
+    w = vim.wo
 }
 
 local set_options = function(scope, options)
-	for key, value  in pairs(options) do
-		scope[key] = value
-	end
+    for key, value  in pairs(options) do
+        scope[key] = value
+    end
 end
 
+-- Colors
 require('material').set()
+g.material_style = 'palenight'
 
-vim.g.material_style = 'palenight'
+-- Tabs (expandtab, smartindent defined in options_buffer)
+cmd('set ts=4')
+cmd('set sw=4')
 
 local options_global = {
-	mouse = 'a'	
+    mouse = 'a',
+    t_Co = '256',
+    showtabline = 2,
+    scrolloff = 5,
+    termguicolors = true,
+    fileencoding = 'utf-8',
 }
 
 local options_buffer = {
-
+    expandtab = true,
+    smartindent = true
 }
 
 local options_window = {
-	number = true,
+    number = true,
+    cursorline = true
 }
 
 set_options(scopes.o, options_global)
