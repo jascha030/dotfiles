@@ -20,7 +20,7 @@ require('material').set()
 vim.g.material_style = 'palenight'
 
 local options_global = {
-	
+	mouse = 'a'	
 }
 
 local options_buffer = {
