@@ -7,6 +7,15 @@ fi
 source $HOME/.dotfiles/shell/antigen.zsh
 source $HOME/.dotfiles/.antigenrc
 
+# Tmux
+if which tmux 2>&1 >/dev/null; then
+  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach -t hack || tmux new -s hack; exit
+  fi
+fi
+
+ZSH_TMUX_AUTOSTART=true
+
 # Export globals
 export DOTFILES="$HOME/.dotfiles"
 export PSTORM='phpstorm'
@@ -24,6 +33,7 @@ eval "$(pyenv init -)"
 
 source $DOTFILES/.p10k.zsh
 source $HOME/.fzf.zsh
+
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
