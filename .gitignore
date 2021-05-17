@@ -90,4 +90,6 @@ Temporary Items
 
 shell/antigen.zsh
 
+*.zwc
+
 
