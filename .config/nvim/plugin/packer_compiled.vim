@@ -75,6 +75,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/lspkind-nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
   ["material.nvim"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/material.nvim"
@@ -86,6 +90,14 @@ _G.packer_plugins = {
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
