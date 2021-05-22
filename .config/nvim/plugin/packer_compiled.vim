@@ -103,9 +103,25 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
+  playground = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/playground"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
   ["rainbow_parentheses.vim"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/rainbow_parentheses.vim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   }
 }
 

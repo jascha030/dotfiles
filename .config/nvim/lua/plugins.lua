@@ -13,5 +13,13 @@ return require('packer').startup(function()
 	}
 	use 'kyazdani42/nvim-tree.lua'
 	use 'junegunn/rainbow_parentheses.vim'
+    use 'norcalli/nvim-colorizer.lua'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {
+            {'nvim-lua/popup.nvim'}, 
+            {'nvim-lua/plenary.nvim'}
+        }
+    }
 end)
 
