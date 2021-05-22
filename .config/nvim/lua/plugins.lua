@@ -12,7 +12,6 @@ return require('packer').startup(function()
   		requires = {'kyazdani42/nvim-web-devicons', opt = true}
 	}
 	use 'kyazdani42/nvim-tree.lua'
-	use 'junegunn/rainbow_parentheses.vim'
     use 'norcalli/nvim-colorizer.lua'
     use {
         'nvim-telescope/telescope.nvim',

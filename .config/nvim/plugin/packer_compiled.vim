@@ -83,6 +83,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/material.nvim"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/jascha030/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
