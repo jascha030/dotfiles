@@ -4,7 +4,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Antigen
-[ -f $HOME/.dotfiles/shell/antigen.zsh ] && source $HOME/.dotfiles/shell/antigen.zsh
+[ -f $HOME/.dotfiles/shell/zsh/antigen.zsh ] && source $HOME/.dotfiles/shell/zsh/antigen.zsh
 [ -f $HOME/.dotfiles/.antigenrc ] && source $HOME/.dotfiles/.antigenrc
 
 # Tmux
@@ -16,12 +16,18 @@ if which tmux 2>&1 >/dev/null; then
    fi
 fi
 
-# Export globals
+# Globals
 export DOTFILES="${HOME}/.dotfiles"
+export WORKINGDIR="${HOME}/.workingDir"
+export PROJECTS="${WORKINGDIR}/Projects"
+export SBPROJECTS="${PROJECTS}/Socialbrothers"
+
 export PSTORM='phpstorm'
-export VSCODE='code'
 export NVIM='nvim'
-export EDITOR=$NVIM
+
+# export VSCODE='code'
+
+
 
 # PyEnv (Python Env)
 eval "$(pyenv init -)"
@@ -30,8 +36,8 @@ eval "$(pyenv init -)"
 
 
 # Aliases & Paths
-[ -f $DOTFILES/shell/aliases.zsh ] && source $DOTFILES/shell/aliases.zsh
-[ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
+[ -f $DOTFILES/shell/zsh/aliases.zsh ] && source $DOTFILES/shell/zsh/aliases.zsh
+[ -f $DOTFILES/shell/zsh/path.zsh ] && source $DOTFILES/shell/zsh/path.zsh
 [ -f $DOTFILES/shell/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
 [ -f $DOTFILES/.p10k.zsh ] && source $DOTFILES/.p10k.zsh
 [ -f $DOTFILES/.fzf.zsh ] && source $DOTFILES/.fzf.zsh
@@ -41,3 +47,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Output funny msg
 figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
