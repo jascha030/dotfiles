@@ -16,36 +16,40 @@ if which tmux 2>&1 >/dev/null; then
    fi
 fi
 
-# Globals
+# Directory globals
+# Dotfile directories
 export DOTFILES="${HOME}/.dotfiles"
+export DOTZSH="${DOTFILES}/shell/zsh"
+
+# Project directories
 export WORKINGDIR="${HOME}/.workingDir"
 export PROJECTS="${WORKINGDIR}/Projects"
 export SBPROJECTS="${PROJECTS}/Socialbrothers"
 
+# Editor globals
 export PSTORM='phpstorm'
 export NVIM='nvim'
 
-# export VSCODE='code'
-
+export EDITOR=$NVIM
 
 
 # PyEnv (Python Env)
 eval "$(pyenv init -)"
 
-# Nvim
-
 
 # Aliases & Paths
 [ -f $DOTFILES/shell/zsh/aliases.zsh ] && source $DOTFILES/shell/zsh/aliases.zsh
 [ -f $DOTFILES/shell/zsh/path.zsh ] && source $DOTFILES/shell/zsh/path.zsh
-[ -f $DOTFILES/shell/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
-[ -f $DOTFILES/.p10k.zsh ] && source $DOTFILES/.p10k.zsh
-[ -f $DOTFILES/.fzf.zsh ] && source $DOTFILES/.fzf.zsh
+[ -f $DOTFILES/shell/zsh/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
 
+# Linked ZSH files
+[[ ! -f $DOTZSH/fzf.zsh ]] || source $HOME/.fzf.zsh
+[[ ! -f $DOTZSH/p10k.zsh ]] || source $HOME/.p10k.zsh
+
+# iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Output funny msg
+
+# Output funny msg when done
 figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
