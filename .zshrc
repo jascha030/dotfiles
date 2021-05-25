@@ -16,7 +16,6 @@ if which tmux 2>&1 >/dev/null; then
    fi
 fi
 
-# Directory globals
 # Dotfile directories
 export DOTFILES="${HOME}/.dotfiles"
 export DOTZSH="${DOTFILES}/shell/zsh"
@@ -25,6 +24,9 @@ export DOTZSH="${DOTFILES}/shell/zsh"
 export WORKINGDIR="${HOME}/.workingDir"
 export PROJECTS="${WORKINGDIR}/Projects"
 export SBPROJECTS="${PROJECTS}/Socialbrothers"
+
+# Brewfile
+export HOMEBREW_BUNDLE_FILE="${DOTFILES}/Brewfile"
 
 # Editor globals
 export PSTORM='phpstorm'
@@ -38,9 +40,9 @@ eval "$(pyenv init -)"
 
 
 # Aliases & Paths
-[ -f $DOTFILES/shell/zsh/aliases.zsh ] && source $DOTFILES/shell/zsh/aliases.zsh
-[ -f $DOTFILES/shell/zsh/path.zsh ] && source $DOTFILES/shell/zsh/path.zsh
-[ -f $DOTFILES/shell/zsh/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
+[[ ! -f $DOTFILES/shell/zsh/aliases.zsh ]] || source $DOTFILES/shell/zsh/aliases.zsh
+[[ ! -f $DOTFILES/shell/zsh/path.zsh ]] || source $DOTFILES/shell/zsh/path.zsh
+[[ ! -f $DOTFILES/shell/zsh/custom_functions.zsh ]] || source $DOTFILES/shell/custom_functions.zsh
 
 # Linked ZSH files
 [[ ! -f $DOTZSH/fzf.zsh ]] || source $HOME/.fzf.zsh
@@ -52,4 +54,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Output funny msg when done
 figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
-
