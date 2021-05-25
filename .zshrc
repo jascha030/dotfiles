@@ -4,8 +4,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Antigen
-source $HOME/.dotfiles/shell/antigen.zsh
-source $HOME/.dotfiles/.antigenrc
+[ -f $HOME/.dotfiles/shell/antigen.zsh ] && source $HOME/.dotfiles/shell/antigen.zsh
+[ -f $HOME/.dotfiles/.antigenrc ] && source $HOME/.dotfiles/.antigenrc
 
 # Tmux
 ZSH_TMUX_AUTOSTART=true
@@ -34,8 +34,7 @@ eval "$(pyenv init -)"
 [ -f $DOTFILES/shell/path.zsh ] && source $DOTFILES/shell/path.zsh
 [ -f $DOTFILES/shell/custom_functions.zsh ] && source $DOTFILES/shell/custom_functions.zsh
 [ -f $DOTFILES/.p10k.zsh ] && source $DOTFILES/.p10k.zsh
-
-[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+[ -f $DOTFILES/.fzf.zsh ] && source $DOTFILES/.fzf.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
