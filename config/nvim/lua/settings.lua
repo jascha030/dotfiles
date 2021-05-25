@@ -1,9 +1,9 @@
 -- Shortcuts for vim related functions
 local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
 local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
-local g = vim.g      -- a table to access global variables
 
 local scopes = {
+    g = vim.g,
     o = vim.o,
     b = vim.bo,
     w = vim.wo
@@ -17,11 +17,13 @@ end
 
 -- Colors
 require('material').set()
-g.material_style = 'palenight'
+scopes.g.material_style = 'palenight'
 
 -- Tabs (expandtab, smartindent defined in options_buffer)
 cmd('set ts=4')
 cmd('set sw=4')
+cmd('set incsearch')
+cmd('set colorcolumn=120')
 
 local options_global = {
     mouse = 'a',
