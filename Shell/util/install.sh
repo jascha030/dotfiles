@@ -50,6 +50,7 @@ mkdir "$HOME/.workingDir"
 mkdir "$HOME/.workingDir/Projects"
 mkdir "$HOME/.workingDir/Projects/Socialbrothers"
 
+ln -s "$DOTFILES"/Shell/bin "$HOME"/bin
 
 # Remove standard dotfiles and Symlink with the ones from the .dotfiles repo
 for homeKey in "${!LINK_QUEUE[@]}"
