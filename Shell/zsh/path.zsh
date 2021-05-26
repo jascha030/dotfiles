@@ -18,7 +18,7 @@ export PYENV_ROOT="${HOME}/.pyenv"
 export PATH="${PYENV_ROOT}/bin:${PATH}"
 
 # User bin
-export "${HOME}/bin:${PATH}"
+export PATH="${HOME}/bin:${PATH}"
 
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
