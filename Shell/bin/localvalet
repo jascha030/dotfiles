@@ -1,0 +1,41 @@
+#! /bin/bash
+
+PROJECT_ROOT_DIR=`echo $PWD`
+PUBLIC_DIR="$PROJECT_ROOT_DIR"/app/public/
+COMPOSER_FILE="$PUBLIC_DIR"/composer.json
+COMPOSER_LOCK="$PUBLIC_DIR"/composer.lock
+
+GIT=`which git`
+COMPOSER=`which composer`
+
+if [ ! -f $COMPOSER_FILE ]; then
+    exit "No composer.json found"
+fi
+
+if [ -f $COMPOSER_LOCK ]; then
+    echo "Removing composer.lock... \n"
+    rm $COMPOSER_LOCK
+fi
+
+cd $PUBLIC_DIR
+
+
+echo "Setting up Wordpress... \n"
+
+rm -rf "$PUBLIC_DIR"/*
+$GIT clone git@github.com:WordPress/WordPress.git ./
+
+rm -rf "$PUBLIC_DIR"/.git
+
+cd ../../
+$GIT reset --hard
+
+
+cd app/public/
+
+
+$COMPOSER clear-cache
+$COMPOSER install
+
+echo "Done. \n"
+
