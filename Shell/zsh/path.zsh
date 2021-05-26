@@ -13,6 +13,10 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # Ruby
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
+# PyEnv
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH="${PYENV_ROOT}/bin:${PATH}"
+
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.

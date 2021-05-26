@@ -34,11 +34,6 @@ export NVIM='nvim'
 
 export EDITOR=$NVIM
 
-
-# PyEnv (Python Env)
-eval "$(pyenv init -)"
-
-
 # Aliases & Paths
 [[ ! -f $DOTFILES/shell/zsh/aliases.zsh ]] || source $DOTFILES/shell/zsh/aliases.zsh
 [[ ! -f $DOTFILES/shell/zsh/path.zsh ]] || source $DOTFILES/shell/zsh/path.zsh
@@ -47,6 +42,11 @@ eval "$(pyenv init -)"
 # Linked ZSH files
 [[ ! -f $DOTZSH/fzf.zsh ]] || source $HOME/.fzf.zsh
 [[ ! -f $DOTZSH/p10k.zsh ]] || source $HOME/.p10k.zsh
+
+
+# PyEnv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
