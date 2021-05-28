@@ -15,10 +15,6 @@ alias confdir="cd $HOME/.config"
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
 
-# Brew install and add to Brewfile
-# alias brewsave="brew install $1; echo "${1} \n" >> $DOTFILES/Brewfile;"
-# alias casksave=brew install $1 --cask; echo "${$1} \n" >> $DOTFILES/Brewfiles;
-
 # Faster Time Machine Backup
 alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
 
@@ -54,8 +50,11 @@ alias wwwd="cd $HOME/.projx/www"
 alias remotesites="cd $HOME/.projx/www/Remotes"
 alias sbsites="cd $HOME/.projx/www/socialbrothers"
 
-# alias sb="cd ~/SocialBrothers"
-# alias programming="cd ~/Programming"
+alias sb="cd ${HOME}/SocialBrothers"
+alias projx="cd ${HOME}/.workingDir/Projects"
+
+# Start composer project start-composerpr
+alias cmprj="start-composerpr"
 
 # PHP
 alias cc="&& composer "

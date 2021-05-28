@@ -1,0 +1,26 @@
+#! /bin/bash
+
+COMPOSER=`which composer`
+GIT=`which git`
+DIR=$1
+
+mkdir ./"$DIR"
+cd "$DIR"/
+
+mkdir src includes resources tests util
+
+cp "$DOTFILES/dot_gitignore" ./.gitignore
+cp "$DOTFILES/php/.php_cs" ./util/.php_cs
+cp "$DOTFILES/php/phpunit.xml" ./phpunit.xml
+
+touch util/run_tests
+
+echo "#! /bin/bash"
+echo "../vendor/bin/phpunit"
+
+$GIT init
+$GIT flow init
+$GIT add .gitignore && git commit -m"initial commit with .gitignore"
+
+$COMPOSER init
+
