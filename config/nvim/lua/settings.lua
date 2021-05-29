@@ -24,6 +24,7 @@ cmd('set ts=4')
 cmd('set sw=4')
 cmd('set incsearch')
 cmd('set colorcolumn=120')
+cmd('set backspace=indent,eol,start')
 
 local options_global = {
     mouse = 'a',
