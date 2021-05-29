@@ -12,11 +12,8 @@ mkdir src includes resources tests util
 cp "$DOTFILES/dot_gitignore" ./.gitignore
 cp "$DOTFILES/php/.php_cs" ./util/.php_cs
 cp "$DOTFILES/php/phpunit.xml" ./phpunit.xml
-
-touch util/run_tests
-
-echo "#! /bin/bash"
-echo "../vendor/bin/phpunit"
+cp "$DOTFILES/php/run_tests" ./run_tests
+cp "$DOTFILES/php/includes/loader.php" ./includes/loader.php
 
 $GIT init
 $GIT flow init
