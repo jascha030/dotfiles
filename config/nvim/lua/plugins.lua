@@ -20,5 +20,6 @@ return require('packer').startup(function()
             {'nvim-lua/plenary.nvim'}
         }
     }
+    use 'hrsh7th/nvim-compe'
 end)
 
