@@ -1,23 +1,23 @@
 # Ali(J)asses
 alias edit="${EDITOR} $1"
 alias zshconfig="edit $DOTFILES/.zshrc"
-alias zshalias="edit $DOTFILES/shell/aliases.zsh"
-alias ohmyzsh="nvim $HOME/.oh-my-zsh"
+alias e:zshrc="zshconfig"
+alias e:aliases="edit $DOTFILES/Shell/zsh/aliases.zsh"
+alias e:path="edit $DOTFILES/Shell/zsh/path.zsh"
 
 # Navigation
-alias rlsh="source $HOME/.zshrc"
-alias rr="rlsh"
+alias rr="source $HOME/.zshrc"
 alias x="exit"
 alias c="clear"
 alias ll="colorls -Ahl --color --group-directories-first"
+
 alias confdir="cd $HOME/.config"
+alias dotfiles="cd $DOTFILES"
 
 # Clean and update Brew
 alias brewup="brew update && brew outdated; brew upgrade && brew cleanup; brew doctor"
-
 # Faster Time Machine Backup
 alias tm-auto="sudo tmutil startbackup --auto; tmutil status"
-
 # Remove valet.sock and restart.
 alias valetrm="rm $HOME/.config/valet/valet.sock"
 alias valetr="valetrm && valet restart" # Make a symbolic link in current dir.
@@ -39,19 +39,13 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Working dir
-alias dev="cd ~/.projx"
-alias temp="cd ~/.projx/temp"
-
-alias dotfiles="cd $DOTFILES"
-alias dfs="dotfiles"
+alias dev="cd ${HOME}/.development"
 alias library="cd $HOME/Library"
 
-alias wwwd="cd $HOME/.projx/www"
-alias remotesites="cd $HOME/.projx/www/Remotes"
-alias sbsites="cd $HOME/.projx/www/socialbrothers"
-
-alias sb="cd ${HOME}/SocialBrothers"
-alias projx="cd ${HOME}/.workingDir/Projects"
+alias wwwd="cd $HOME/.development/www"
+alias remotesites="cd $HOME/.development/www/Remotes"
+alias sbsites="cd $HOME/.development/www/socialbrothers"
+alias projx="cd ${HOME}/.development/Projects"
 
 # Start composer project start-composerpr
 alias cmprj="start-composerpr"
@@ -94,5 +88,5 @@ alias glbgitig="cat $DOTFILES/.gitignore | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias cpssh="copyssh"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias ccdir="echo $PWD | pbcopy"
+alias ccdir="echo `echo $PWD` | pbcopy"
 
