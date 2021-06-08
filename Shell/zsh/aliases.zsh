@@ -5,6 +5,8 @@ alias e:zshrc="zshconfig"
 alias e:aliases="edit $DOTFILES/Shell/zsh/aliases.zsh"
 alias e:path="edit $DOTFILES/Shell/zsh/path.zsh"
 
+alias cat="bat"
+
 # Navigation
 alias rr="source $HOME/.zshrc"
 alias x="exit"
