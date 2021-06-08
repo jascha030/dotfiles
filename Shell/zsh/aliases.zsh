@@ -24,7 +24,7 @@ alias valetr="valetrm && valet restart" # Make a symbolic link in current dir.
 alias linkdir="ln -s $PWD/"
 
 # Chrome with just a little bit less RAMpage.
-alias chrome="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --args --process-per-site"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --process-per-site"
 alias browser="chrome"
 alias chromi="chrome -incognito"
 
