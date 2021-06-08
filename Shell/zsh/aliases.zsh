@@ -39,7 +39,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Working dir
-alias dev="cd ${HOME}/.development"
+alias dev="cd ${HOME}/.development/Projects"
 alias library="cd $HOME/Library"
 
 alias wwwd="cd $HOME/.development/www"
