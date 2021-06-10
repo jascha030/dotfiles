@@ -7,7 +7,9 @@ fi
 [ -f $HOME/.dotfiles/shell/zsh/antigen.zsh ] && source $HOME/.dotfiles/shell/zsh/antigen.zsh
 [ -f $HOME/.dotfiles/.antigenrc ] && source $HOME/.dotfiles/.antigenrc
 
-# Tmux
+
+#------------------------------------------------------ Tmux -------------------------------------------------------- #
+
 ZSH_TMUX_AUTOSTART=true
 
 if which tmux 2>&1 >/dev/null; then
@@ -16,7 +18,9 @@ if which tmux 2>&1 >/dev/null; then
    fi
 fi
 
-# Dotfile directories
+
+#--------------------------------------------------- Globals -------------------------------------------------------- #
+
 export DOTFILES="${HOME}/.dotfiles"
 export DOTZSH="${DOTFILES}/shell/zsh"
 
@@ -34,7 +38,9 @@ export NVIM='nvim'
 
 export EDITOR=$NVIM
 
-# Aliases & Paths
+
+#----------------------------------------------- Sources & Paths -----------------------------------------------------#
+
 [[ ! -f $DOTFILES/shell/zsh/aliases.zsh ]] || source $DOTFILES/shell/zsh/aliases.zsh
 [[ ! -f $DOTFILES/shell/zsh/path.zsh ]] || source $DOTFILES/shell/zsh/path.zsh
 [[ ! -f $DOTFILES/shell/zsh/custom_functions.zsh ]] || source $DOTFILES/shell/custom_functions.zsh
@@ -44,13 +50,12 @@ export EDITOR=$NVIM
 [[ ! -f $DOTZSH/p10k.zsh ]] || source $HOME/.p10k.zsh
 
 
-# PyEnv
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# PyEnv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # Output funny msg when done
 figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
