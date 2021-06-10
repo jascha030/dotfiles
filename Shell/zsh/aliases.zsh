@@ -5,13 +5,19 @@ alias e:zshrc="zshconfig"
 alias e:aliases="edit $DOTFILES/Shell/zsh/aliases.zsh"
 alias e:path="edit $DOTFILES/Shell/zsh/path.zsh"
 
+# Bat instead of cat
 alias cat="bat"
+alias ogcat="\cat"
+alias fpb="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 
 # Navigation
 alias rr="source $HOME/.zshrc"
 alias x="exit"
 alias c="clear"
+
 alias ll="colorls -Ahl --color --group-directories-first"
+alias lc='colorls -lA --sd'
+alias lr="colorls --tree=5"
 
 alias confdir="cd $HOME/.config"
 alias dotfiles="cd $DOTFILES"
