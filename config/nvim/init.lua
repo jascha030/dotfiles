@@ -16,6 +16,7 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 require('settings')
 require('plugins')
 require('lsp')
+require('plug')
 
 require('plugins.treesitter')
 require('plugins.nvim-compe')
