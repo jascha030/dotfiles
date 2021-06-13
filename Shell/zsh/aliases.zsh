@@ -13,6 +13,7 @@ alias fpb="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {
 # Navigation
 alias rr="source $HOME/.zshrc"
 alias x="exit"
+alias q="exit"
 alias c="clear"
 
 alias ll="colorls -Ahl --color --group-directories-first"
