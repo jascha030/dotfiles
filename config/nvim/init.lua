@@ -20,4 +20,4 @@ require('plug')
 
 require('plugins.treesitter')
 require('plugins.nvim-compe')
-
+require('plugins.lualine')
