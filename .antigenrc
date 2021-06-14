@@ -8,7 +8,6 @@ antigen bundle z
 antigen bundle tmux
 antigen bundle pip
 antigen bundle fzf
-antigen bundle fasd
 
 # ZSHeuuuuujjjjj
 antigen bundle zsh-users/zsh-syntax-highlighting

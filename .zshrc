@@ -7,6 +7,7 @@ fi
 [ -f $HOME/.dotfiles/shell/zsh/antigen.zsh ] && source $HOME/.dotfiles/shell/zsh/antigen.zsh
 [ -f $HOME/.dotfiles/.antigenrc ] && source $HOME/.dotfiles/.antigenrc
 
+eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install)"
 
 #------------------------------------------------------ Tmux -------------------------------------------------------- #
 
@@ -14,7 +15,7 @@ ZSH_TMUX_AUTOSTART=true
 
 if which tmux 2>&1 >/dev/null; then
    if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-       tmux attach -t hack || tmux new -s hack; exit
+       tmux attach -t main || tmux new -s main; exit
    fi
 fi
 
@@ -46,9 +47,8 @@ export EDITOR=$NVIM
 [[ ! -f $DOTFILES/shell/zsh/custom_functions.zsh ]] || source $DOTFILES/shell/custom_functions.zsh
 
 # Linked ZSH files
-[[ ! -f $DOTZSH/fzf.zsh ]] || source $HOME/.fzf.zsh
 [[ ! -f $DOTZSH/p10k.zsh ]] || source $HOME/.p10k.zsh
-
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # iTerm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -58,4 +58,5 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # Output funny msg when done
-figlet -Lcw $(tput cols) -f speed "Jassie030 Hackerman Mode"
+figlet -Lcw $(tput cols) -f speed "Hackerman Mode 030"
+
