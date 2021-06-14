@@ -10,7 +10,7 @@ cd "$DIR"/
 mkdir src includes resources tests util
 
 cp "$DOTFILES/dot_gitignore" ./.gitignore
-cp "$DOTFILES/php/.php_cs" ./util/.php_cs
+cp "$DOTFILES/php/.php-cs-fixer.php" ./.php-cs-fixer.php
 cp "$DOTFILES/php/phpunit.xml" ./phpunit.xml
 cp "$DOTFILES/php/run_tests" ./run_tests
 cp "$DOTFILES/php/includes/loader.php" ./includes/loader.php
