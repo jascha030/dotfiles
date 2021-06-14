@@ -25,5 +25,6 @@ end
 
 plug('~/.config/nvim/plugged', {
     'ojroques/vim-oscyank';
+    'voldikss/vim-floaterm';
 })
 
