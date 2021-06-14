@@ -16,6 +16,10 @@ alias x="exit"
 alias q="exit"
 alias c="clear"
 
+alias screensaver="open -a ScreenSaverEngine"
+alias scrsvr="open -a ScreenSaverEngine"
+alias ssv="open -a ScreenSaverEngine"
+
 alias ll="colorls -Ahl --color --group-directories-first"
 alias lc='colorls -lA --sd'
 alias lr="colorls --tree=5"
