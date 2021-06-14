@@ -28,7 +28,7 @@ cmd('set backspace=indent,eol,start')
 
 local options_global = {
     mouse = 'a',
-    t_Co = '256',
+    -- t_Co = '256',
     showtabline = 2,
     scrolloff = 5,
     termguicolors = true,
