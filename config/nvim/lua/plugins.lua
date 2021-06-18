@@ -21,5 +21,6 @@ return require('packer').startup(function()
         }
     }
     use 'hrsh7th/nvim-compe'
+    use 'tjdevries/colorbuddy.nvim'
 end)
 
