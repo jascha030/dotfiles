@@ -103,3 +103,6 @@ alias cpssh="copyssh"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias ccdir="echo `echo $PWD` | pbcopy"
 
+# Wordpress related aliases
+
+alias c:wpindex="echo \"<?php\n//silence is golden\" >index.php"
