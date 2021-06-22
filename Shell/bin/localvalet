@@ -37,7 +37,7 @@ $COMPOSER install
 echo "Please fill in a test url for valet to link to this project"
 read URL
 
-$VALET link $url
+$VALET link $URL
 
 read -p "Do you want to secure this url (https) [y/n]" -n 1 -r
 echo    
