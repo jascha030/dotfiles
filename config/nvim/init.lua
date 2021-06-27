@@ -21,6 +21,11 @@ require('plug')
 require('plugins.treesitter')
 require('plugins.nvim-compe')
 require('plugins.lualine')
+require('plugins.nvim-tree')
 
 require('neoscroll').setup()
+
+require('settings.keymap')
+
+-- require('plugins.neoscroll')
 
