@@ -21,6 +21,7 @@ alias scrsvr="open -a ScreenSaverEngine"
 alias ssv="open -a ScreenSaverEngine"
 
 alias ll="colorls -Ahl --color --group-directories-first"
+alias llb="ll | bat"
 alias lc='colorls -lA --sd'
 alias lr="colorls --tree=5"
 
