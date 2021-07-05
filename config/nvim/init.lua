@@ -1,5 +1,4 @@
 vim.g.mapleader = '<space>'
--- vim.cmd('syntax on')
 
 local execute = vim.api.nvim_command
 local fn = vim.fn
@@ -13,19 +12,8 @@ end
 
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 
-require('settings')
 require('plugins')
+require('settings')
 require('lsp')
 require('plug')
-
-require('plugins.treesitter')
-require('plugins.nvim-compe')
-require('plugins.lualine')
-require('plugins.nvim-tree')
-
-require('neoscroll').setup()
-
-require('settings.keymap')
-
--- require('plugins.neoscroll')
-
+require('keymap')
