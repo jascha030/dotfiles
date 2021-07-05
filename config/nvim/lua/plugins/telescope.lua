@@ -1,6 +1,6 @@
 local actions = require('telescope.actions')
 
-require('telescope').setup {
+require('telescope').setup({
     defaults = {
         prompt_prefix = " > ",
         color_devicons = true,
@@ -21,7 +21,7 @@ require('telescope').setup {
             override_file_sorter = true,
         }
     }
-}
+})
 
 require('telescope').load_extension('fzy_native')
 

@@ -1,4 +1,5 @@
-vim.cmd [[packadd packer.nvim]]
+-- Packer
+vim.cmd([[packadd packer.nvim]], false)
 
 return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
@@ -23,5 +24,7 @@ return require('packer').startup(function()
     use 'hrsh7th/nvim-compe'
     use 'tjdevries/colorbuddy.nvim'
     use 'karb94/neoscroll.nvim'
+    use 'iamcco/markdown-preview.nvim'
+    use 'ojroques/vim-oscyank'
 end)
 
