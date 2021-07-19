@@ -20,7 +20,8 @@ alias screensaver="open -a ScreenSaverEngine"
 alias scrsvr="open -a ScreenSaverEngine"
 alias ssv="open -a ScreenSaverEngine"
 
-alias ll="colorls -Ahl --color --group-directories-first"
+alias ll="lsd -Ahl --color --group-dirs=first"
+#alias ll="colorls -Ahl --color --group-directories-first"
 alias llb="ll | bat"
 alias lc='colorls -lA --sd'
 alias lr="colorls --tree=5"
@@ -107,3 +108,4 @@ alias ccdir="echo `echo $PWD` | pbcopy"
 # Wordpress related aliases
 
 alias c:wpindex="echo \"<?php\n//silence is golden\" >index.php"
+alias sb:starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme-test.git"
