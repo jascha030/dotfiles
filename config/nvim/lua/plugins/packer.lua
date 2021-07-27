@@ -26,5 +26,6 @@ return require('packer').startup(function()
     use 'karb94/neoscroll.nvim'
     use 'iamcco/markdown-preview.nvim'
     use 'ojroques/vim-oscyank'
+    use 'folke/tokyonight.nvim'
 end)
 

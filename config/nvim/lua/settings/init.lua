@@ -16,8 +16,9 @@ local set_options = function(scope, options)
 end
 
 -- Colors
-require('material').set()
-
+cmd[[colorscheme tokyonight]]
+-- require('material').set()
+--
 -- Tabs (expandtab, smartindent defined in options_buffer)
 cmd('set ts=4')
 cmd('set sw=4')
