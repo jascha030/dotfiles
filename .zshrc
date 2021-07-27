@@ -42,12 +42,12 @@ export EDITOR=$NVIM
 
 #----------------------------------------------- Sources & Paths -----------------------------------------------------#
 
-[[ ! -f $DOTFILES/shell/zsh/aliases.zsh ]] || source $DOTFILES/shell/zsh/aliases.zsh
-[[ ! -f $DOTFILES/shell/zsh/path.zsh ]] || source $DOTFILES/shell/zsh/path.zsh
+[[ ! -f $DOTFILES/aliases.zsh ]] || source $DOTFILES/aliases.zsh
+[[ ! -f $DOTFILES/path.zsh ]] || source $DOTFILES/path.zsh
 [[ ! -f $DOTFILES/shell/zsh/custom_functions.zsh ]] || source $DOTFILES/shell/custom_functions.zsh
 
 # Linked ZSH files
-[[ ! -f $DOTZSH/p10k.zsh ]] || source $HOME/.p10k.zsh
+[[ ! -f $DOTFILES/p10k.zsh ]] || source $HOME/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # iTerm2 integration
