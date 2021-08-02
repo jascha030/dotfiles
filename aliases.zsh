@@ -2,8 +2,8 @@
 alias edit="${EDITOR} $1"
 alias zshconfig="edit $DOTFILES/.zshrc"
 alias e:zshrc="zshconfig"
-alias e:aliases="edit $DOTFILES/Shell/zsh/aliases.zsh"
-alias e:path="edit $DOTFILES/Shell/zsh/path.zsh"
+alias e:aliases="edit $DOTFILES/aliases.zsh"
+alias e:path="edit $DOTFILES/path.zsh"
 
 # Bat instead of cat
 alias cat="bat"
@@ -95,8 +95,7 @@ alias wip="commit wip"
 
 # Suffix Aliases
 alias -s php=pstorm
-alias -s {.zshrc,zsh,sh,json,yaml,.env}=nvim
-alias -s {cs,ts,html}=code
+alias -s {.zshrc,zsh,sh,json,yaml,.env,cs,ts,html}=nvim
 
 # Templates
 alias glbgitig="cat $DOTFILES/.gitignore | pbcopy"
@@ -108,4 +107,9 @@ alias ccdir="echo `echo $PWD` | pbcopy"
 # Wordpress related aliases
 
 alias c:wpindex="echo \"<?php\n//silence is golden\" >index.php"
-alias sb:starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme-test.git"
+
+alias clone:sb-starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme-test.git"
+alias clone:wp="git clone git@github.com:wordpress/wordpress"
+
+alias vim="nvim"
+
