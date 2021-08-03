@@ -13,11 +13,11 @@ eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-ins
 
 ZSH_TMUX_AUTOSTART=true
 
-if which tmux 2>&1 >/dev/null; then
-   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-       tmux attach -t main || tmux new -s main; exit
-   fi
-fi
+#if which tmux 2>&1 >/dev/null; then
+#   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#       tmux attach -t main || tmux new -s main; exit
+#   fi
+#fi
 
 
 #--------------------------------------------------- Globals -------------------------------------------------------- #
@@ -47,7 +47,7 @@ export EDITOR=$NVIM
 [[ ! -f $DOTFILES/shell/zsh/custom_functions.zsh ]] || source $DOTFILES/shell/custom_functions.zsh
 
 # Linked ZSH files
-[[ ! -f $DOTFILES/p10k.zsh ]] || source $HOME/.p10k.zsh
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # iTerm2 integration
