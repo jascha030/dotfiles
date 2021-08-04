@@ -13,11 +13,11 @@ eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-ins
 
 ZSH_TMUX_AUTOSTART=true
 
-#if which tmux 2>&1 >/dev/null; then
-#   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#       tmux attach -t main || tmux new -s main; exit
-#   fi
-#fi
+if which tmux 2>&1 >/dev/null; then
+   if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+       tmux attach -t main || tmux new -s main; exit
+   fi
+fi
 
 
 #--------------------------------------------------- Globals -------------------------------------------------------- #
