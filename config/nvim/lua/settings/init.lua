@@ -1,13 +1,7 @@
 -- Shortcuts for vim related functions
 local cmd = vim.cmd  -- to execute Vim commands e.g. cmd('pwd')
 local fn = vim.fn    -- to call Vim functions e.g. fn.bufnr()
-
-local scopes = {
-    g = vim.g,
-    o = vim.o,
-    b = vim.bo,
-    w = vim.wo
-}
+local scopes = require('utils.scopes')
 
 local set_options = function(scope, options)
     for key, value  in pairs(options) do
