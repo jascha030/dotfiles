@@ -31,7 +31,7 @@ export PROJECTS="${WORKINGDIR}/Projects"
 export SBPROJECTS="${PROJECTS}/Socialbrothers"
 
 # Brewfile
-export HOMEBREW_BUNDLE_FILE="${DOTFILES}/Brewfile"
+export HOMEBREW_BUNDLE_FILE="${DOTFILES}/macos/Brewfile"
 
 # Editor globals
 export PSTORM='phpstorm'

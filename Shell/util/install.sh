@@ -35,7 +35,7 @@ fi
 brew update
 brew tap homebrew/bundle
 # Install our bundled packages
-brew bundle install --file="$DOTFILES/Brewfile"
+brew bundle install --file="$DOTFILES/macos/Brewfile"
 
 
 # PHP, PECL
@@ -55,11 +55,11 @@ ln -s "$DOTFILES"/Shell/bin "$HOME"/bin
 # Remove standard dotfiles and Symlink with the ones from the .dotfiles repo
 for homeKey in "${!LINK_QUEUE[@]}"
 do
-  rm -rf "$HOME"/"$homeKey";
+  rm -rf "${HOME}/${homeKey}"
   ln -s "${LINK_QUEUE[$homeKey]}" "$HOME"/"$homeKey"
 done
 
 
 # Set macOS preferences
 # shellcheck disable=SC2039
-source .macos
+source $DOTFILES/macos/.macos
