@@ -41,9 +41,9 @@ export EDITOR=$NVIM
 
 #----------------------------------------------- Sources & Paths -----------------------------------------------------#
 
-[[ ! -f $DOTFILES/aliases.zsh ]] || source $DOTFILES/aliases.zsh
-[[ ! -f $DOTFILES/path.zsh ]] || source $DOTFILES/path.zsh
-[[ ! -f $DOTFILES/zsh/custom_functions.zsh ]] || source $DOTFILES/Shell/custom_functions.zsh
+[[ ! -f "${DOTZSH}/aliases.zsh" ]] || source "${DOTZSH}/aliases.zsh"
+[[ ! -f "${DOTZSH}/path.zsh" ]] || source "${DOTZSH}/path.zsh"
+[[ ! -f "${DOTZSH}custom_functions.zsh" ]] || source "${DOTZSH}/custom_functions.zsh"
 
 # Linked ZSH files
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
