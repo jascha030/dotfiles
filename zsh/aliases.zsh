@@ -2,13 +2,14 @@
 alias edit="${EDITOR} $1"
 alias zshconfig="edit $DOTFILES/.zshrc"
 alias e:zshrc="zshconfig"
-alias e:aliases="edit $DOTFILES/aliases.zsh"
-alias e:path="edit $DOTFILES/path.zsh"
+alias e:aliases="edit ${DOTZSH}/aliases.zsh"
+alias e:path="edit ${DOTZSH}/path.zsh"
 
 # Bat instead of cat
 alias cat="bat"
 alias ogcat="\cat"
 alias fpb="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+alias readme="bat ${PWD}/README.md"
 
 # Navigation
 alias rr="source $HOME/.zshrc"
