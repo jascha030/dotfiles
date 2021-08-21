@@ -44,8 +44,8 @@ if the app you want to install is available.
 
 #### Aliases, Paths & Oh My ZSH
 
-Check out the `/shell/zsh/aliases.zsh` file and add your own aliases. If you need to tweak the contents of your `$PATH`
-check out the `/shell/zsh/path.zsh` file. You can adjust the `.zshrc` file to your liking to tweak your zsh and Oh My
+Check out the `/zsh/aliases.zsh` file and add your own aliases. If you need to tweak the contents of your `$PATH`
+check out the `/zsh/path.zsh` file. You can adjust the `.zshrc` file to your liking to tweak your zsh and Oh My
 Zsh setup. More info about how to customize Oh My Zsh can be found [here](https://github.com/ohmyzsh/ohmyzsh).
 
 #### Mackup

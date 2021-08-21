@@ -3,7 +3,7 @@
 echo "Setting up your Mac..."
 
 DOTFILES="$HOME"/.dotfiles
-DOTZSH="$DOTFILES"/shell/zsh
+DOTZSH="$DOTFILES"/zsh
 
 # All dotfiles that are going to be linked in the $HOME directory
 declare -a LINK_QUEUE

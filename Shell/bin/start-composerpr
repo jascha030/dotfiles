@@ -5,19 +5,13 @@ GIT=`which git`
 DIR=$1
 
 mkdir ./"$DIR"
-cd "$DIR"/
 
-mkdir src includes resources tests util
+git clone git@github.com:jascha030/composer-template.git ./"$DIR"
 
-cp "$DOTFILES/dot_gitignore" ./.gitignore
-cp "$DOTFILES/php/.php-cs-fixer.php" ./.php-cs-fixer.php
-cp "$DOTFILES/php/phpunit.xml" ./phpunit.xml
-cp "$DOTFILES/php/run_tests" ./run_tests
-cp "$DOTFILES/php/includes/loader.php" ./includes/loader.php
+cd ./"$DIR"
+rm -rf .git/
 
 $GIT init
 $GIT flow init
-$GIT add .gitignore && git commit -m"initial commit with .gitignore"
-
-$COMPOSER init
+$GIT add .gitignore && git commit -m"initial commit with composer-template"
 
