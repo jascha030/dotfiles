@@ -20,6 +20,10 @@ export PATH="${PYENV_ROOT}/bin:${PATH}"
 # User bin
 export PATH="${HOME}/bin:${PATH}"
 
+LOLCAT=`which lolcat`
+
+export PATH="${LOLCAT}:${PATH}"
+
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.

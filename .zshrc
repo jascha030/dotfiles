@@ -19,7 +19,6 @@ if which tmux 2>&1 >/dev/null; then
    fi
 fi
 
-
 #--------------------------------------------------- Globals -------------------------------------------------------- #
 
 export DOTFILES="${HOME}/.dotfiles"
@@ -52,18 +51,19 @@ export EDITOR=$NVIM
 source "$HOME/.cargo/env"
 . "$HOME/.cargo/env"
 
-# iTerm2 integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # PyEnv
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-
-# Output funny msg when done
-figlet -Lcw $(tput cols) -f speed "Hackerman Mode 030"
-
 eval "$(fnm env)"
 
-# tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# iTerm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Output funny msg when done
+LOLCAT=$(which lolcat)
+TMUX_COLS_WIDTH=$(tmux display -p '#{pane_width}-#{pane_height}')
+
+figlet -Lcw $TMUX_COLS_WIDTH -f speed "Hackerman Mode 030" | $LOLCAT
