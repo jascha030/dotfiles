@@ -80,3 +80,5 @@ shell/antigen.zsh
 ./*.zwc
 
 swap-pane
+
+config/nvim
