@@ -4,6 +4,7 @@ alias zshconfig="edit $DOTFILES/.zshrc"
 alias e:zshrc="zshconfig"
 alias e:aliases="edit ${DOTZSH}/aliases.zsh"
 alias e:path="edit ${DOTZSH}/path.zsh"
+alias e:tmux="edit ${DOTFILES}/tmux/.tmux.conf"
 
 # Bat instead of cat
 alias cat="bat"
