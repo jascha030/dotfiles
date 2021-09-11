@@ -36,7 +36,9 @@ export HOMEBREW_BUNDLE_FILE="${DOTFILES}/macos/Brewfile"
 export PSTORM='phpstorm'
 export NVIM='nvim'
 export EDITOR=$NVIM
+export VISUAL=$NVIM
 
+export NPM_CHECK_INSTALLER="pnpm npm-check -u"
 
 #----------------------------------------------- Sources & Paths -----------------------------------------------------#
 
