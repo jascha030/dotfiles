@@ -38,6 +38,8 @@ export NVIM='nvim'
 export EDITOR=$NVIM
 export VISUAL=$NVIM
 
+export DOTCONFIGDIR="${DOTFILES}/config"
+
 export NPM_CHECK_INSTALLER="pnpm npm-check -u"
 
 #----------------------------------------------- Sources & Paths -----------------------------------------------------#
