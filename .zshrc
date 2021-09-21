@@ -13,6 +13,12 @@ eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-ins
 
 ZSH_TMUX_AUTOSTART=true
 
+# Workaround because of macos' outdated ncurses.
+# Figured out using: https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95
+if [[ $TERM == "tmux-256color" ]]; then
+    export TERM=screen-256color
+fi
+
 if which tmux 2>&1 >/dev/null; then
    if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
        tmux attach -t main || tmux new -s main; exit

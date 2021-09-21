@@ -115,3 +115,7 @@ alias clone:wp="git clone git@github.com:wordpress/wordpress"
 
 alias vim="nvim"
 alias composerreset="rm -rf vendor/ composer.lock && composer clear-cache && composer install"
+
+alias checkitalics="echo -e '\e[3mitalic\e[23m'"
+
+
