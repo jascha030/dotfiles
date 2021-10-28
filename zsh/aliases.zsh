@@ -110,7 +110,7 @@ alias ccdir="echo `echo $PWD` | pbcopy"
 
 alias c:wpindex="echo \"<?php\n//silence is golden\" >index.php"
 
-alias clone:sb-starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme-test.git"
+alias clone:sb-starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme.git"
 alias clone:wp="git clone git@github.com:wordpress/wordpress"
 
 alias vim="nvim"
