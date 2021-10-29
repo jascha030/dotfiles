@@ -64,6 +64,8 @@ alias remotesites="cd $HOME/.development/www/Remotes"
 alias sbsites="cd $HOME/.development/www/socialbrothers"
 alias projx="cd ${HOME}/.development/Projects"
 
+alias cache:spotify="cd ${HOME}/Library/Application Support/spotify"
+
 # Start composer project start-composerpr
 alias cmprj="start-composerpr"
 
