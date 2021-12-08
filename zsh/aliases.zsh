@@ -18,6 +18,9 @@ alias x="exit"
 alias q="exit"
 alias c="clear"
 
+# Copy Broodje Ben to clipboard.
+alias cpbroodje="echo \"38. Witte Italiaanse Bol met Gerookte Kip, Avocado mayonaise met extra avocado en een blikkie cola. - €8,50\" | pbcopy"
+
 alias scrsvr="open -a ScreenSaverEngine"
 alias ssv="open -a ScreenSaverEngine"
 
@@ -109,15 +112,10 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias ccdir="echo `echo $PWD` | pbcopy"
 
 # Wordpress related aliases
-
 alias c:wpindex="echo \"<?php\n//silence is golden\" >index.php"
-
 alias clone:sb-starter="git clone git@bitbucket.org:socialbrothers/wordpress-starter-theme.git"
 alias clone:wp="git clone git@github.com:wordpress/wordpress"
-
 alias vim="nvim"
 alias composerreset="rm -rf vendor/ composer.lock && composer clear-cache && composer install"
-
 alias checkitalics="echo -e '\e[3mitalic\e[23m'"
-
 
