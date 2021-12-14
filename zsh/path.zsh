@@ -20,6 +20,9 @@ export PATH="${PYENV_ROOT}/bin:${PATH}"
 # User bin
 export PATH="${HOME}/bin:${PATH}"
 
+# OpenJDK
+export PATH="/usr/local/opt/openjdk/bin:${PATH}"
+
 LOLCAT=`which lolcat`
 
 export PATH="${LOLCAT}:${PATH}"
