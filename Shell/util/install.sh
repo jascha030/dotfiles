@@ -3,13 +3,13 @@
 echo "Setting up your Mac..."
 
 DOTFILES="$HOME"/.dotfiles
-DOTZSH="$DOTFILES"/zsh
 
 # All dotfiles that are going to be linked in the $HOME directory
 declare -a LINK_QUEUE
 
 # General
 LINK_QUEUE[".zshrc"]="$DOTFILES/.zshrc"
+LINK_QUEUE[".bashrc"]="$DOTFILES/.bashrc"
 LINK_QUEUE[".gitconfig"]="$DOTFILES/git/.gitconfig"
 LINK_QUEUE[".mackup.cfg"]="$DOTFILES/.mackup.cfg"
 
