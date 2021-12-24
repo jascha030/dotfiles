@@ -17,7 +17,7 @@ antigen bundle Aloxaf/fzf-tab
 antigen bundle chrissicool/zsh-256color
 # antigen bundle gretzky/auto-color-ls
 
-antigen bundle desyncr/auto-ls
+# antigen bundle desyncr/auto-ls
 antigen bundle lukechilds/zsh-nvm
 
 THEME=romkatv/powerlevel10k

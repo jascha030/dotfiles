@@ -82,3 +82,5 @@ shell/antigen.zsh
 swap-pane
 
 config/nvim
+
+antigen/.antigenrc.zwc
